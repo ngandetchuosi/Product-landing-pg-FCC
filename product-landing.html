@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code School</title>
+</head>
+
+<body>
+
+    <!--Nav bar that will be fixed-->
+    <div class="Header">
+        <div class="logo">
+            <h1>Code <span>School</span></h1>
+        </div>
+
+        <nav>
+            <ul>
+
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sign Up</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!--Features-->
+    <h2>Features</h2>
+    <ul>
+        <li>Interactive Learning
+            <ul>
+                <li>You practice what you learn as you are learning it.</li>
+            </ul>
+        </li>
+        <li>Expert Guidance
+            <ul>
+                <li>Weekly office hours with experts in the field to help you out!</li>
+            </ul>
+        </li>
+        <li>Self Paced
+            <ul>
+                <li>Learn to code at home, at your own pace.</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+
+    <!--Pricing-->
+    <section class="pricing">
+        <div class="beginner">
+            <h2 class="price-heading">Beginner</h2>
+            <hr>
+            <p>&#36; 5/m </p>
+            <ul>
+                <li>Entire Course</li>
+                <li>Mentor Support</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div class="intermediate">
+            <h2 class="price-heading">intermediate</h2>
+            <hr>
+            <p>&#36; 10/m </p>
+            <ul>
+                <li>All in Beginner</li>
+                <li>Personal Support</li>
+                <li>Projects</li>
+                <li>Coding E-Books</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div class="expert">
+            <h2 class="price-heading">Expert</h2>
+            <hr>
+            <p>&#36; 15/m </p>
+            <ul>
+                <li>All in Intermediate</li>
+                <li>24/7 assistance</li>
+            </ul>
+            <button>Select</button>
+        </div>
+    </section>
+    <hr>
+
+    <!--Sign UP-->
+    <h2 class="sign-up">Learn to code Today!</h2>
+    <form class="signup-form">
+        <label id="name-label">
+            <p> Name: <input type="text" placeholder="Enter name" id="name" required="required"> </p>
+        </label>
+        <label id="email-label">
+            <p> Email: <input type="email" placeholder="Enter your email" id="email" required="required"> </p>
+        </label>
+        <button type="submit">Get Started</button>
+    </form>
+
+    <!--footer starts here-->
+    <footer>
+        <p>&#169; 2020 Code School. All rights reserved.</p>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    </footer>
+
+</body>
+
+</html>

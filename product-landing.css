@@ -35,6 +35,7 @@ header{
     width: 100%;
     display: table;
     background-color: var(--main-color, #08efc7);
+    font-family: 'Share Tech', sans-serif;
 }
 
 nav{
@@ -74,7 +75,7 @@ nav a li{
 }
 
 /* smaller screen*/
-@media (max-width: 460px){
+@media (max-width: 500px){
     .header-img{
         align-self: center;
     }
@@ -86,8 +87,129 @@ nav a li{
 
 /*features styling*/
 
-.features{
+.features{ 
     padding-top: 8%;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+    line-height: 3em;;
+    font-size: 1.08em;
 }
+
+.features h2{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 4em;
+    color: var(--dark);
+}
+
+.features ul{
+    font-family: 'Share Tech', sans-serif;
+    list-style: none;
+}
+
+.main-hr{
+    width: 60%;
+    size: 10px;
+    color: #024439;
+}
+
+@media (max-width: 500px){
+    .features{
+        padding-top: 20%;
+        justify-content: center;
+    }
+    .features h2{
+        text-align: center;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 2em;
+    }
+}
+
+/* Pricing styling */
+
+.pricing{
+    padding: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing ul{
+    list-style: circle;
+}
+
+.price-heading{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.beginner{
+    border: 1px solid #024439;
+    padding: 1em;
+    border-radius: 30%;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.intermediate{
+    border: 1px solid #024439;
+    padding: 1em;
+    border-radius: 30%;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.expert{
+    border: 1px solid #024439;
+    padding: 1em;
+    border-radius: 30%;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.price-btn{
+    text-align: center;
+}
+
+.price-tag{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+    .pricing{
+        align-items: center;
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 2%;
+       
+    }
+}
+
+/* Video */
+.video{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 3em;
+    color: var(--dark);
+}
+
+.vid-div{
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+/* Sign up */
+.sign-up{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 3em;
+    color: var(--dark);
+}
+
+.signup-form{
+    text-align: center;
+}
+
+/* footer */

@@ -29,6 +29,11 @@ nav, a{
     font-size: 1.08em;
 }
 
+nav a:hover{
+    color: var(--light);
+    background-color: var(--dark);
+}
+
 header{
     position: fixed;
     top: 0;
@@ -109,7 +114,7 @@ nav a li{
 }
 
 .main-hr{
-    width: 60%;
+    width: 70%;
     size: 10px;
     color: #024439;
 }
@@ -150,6 +155,8 @@ nav a li{
     padding: 1em;
     border-radius: 30%;
     font-family: 'Share Tech', sans-serif;
+    -webkit-box-shadow: 5px 5px 3px 1px #000000; 
+    box-shadow: 5px 5px 3px 1px #024439;
 }
 
 .intermediate{
@@ -157,6 +164,7 @@ nav a li{
     padding: 1em;
     border-radius: 30%;
     font-family: 'Share Tech', sans-serif;
+    box-shadow: 5px 5px 3px 1px #024439;
 }
 
 .expert{
@@ -164,6 +172,7 @@ nav a li{
     padding: 1em;
     border-radius: 30%;
     font-family: 'Share Tech', sans-serif;
+    box-shadow: 5px 5px 3px 1px #024439;
 }
 
 .price-btn{
@@ -173,6 +182,15 @@ nav a li{
 .price-tag{
     text-align: center;
     font-weight: bold;
+}
+
+button{
+    padding: 2% 10%;
+    text-align: center;
+    background-color: var(--dark);
+    color:#3af8d7;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
 }
 
 @media (max-width: 500px){
@@ -200,7 +218,7 @@ nav a li{
     padding-bottom: 4%;
 }
 
-/* Sign up */
+/* Sign up form*/
 .sign-up{
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
@@ -210,6 +228,42 @@ nav a li{
 
 .signup-form{
     text-align: center;
+    font-family: 'Share Tech', sans-serif;
+}
+
+#name, #email{
+    border-radius: 30px;
+    width: 40%;
+    min-height: 20px;
+    border: 1px solid var(--dark);
+}
+
+#submit{
+    padding: 2% 10%;
+    text-align: center;
+    background-color: var(--main-color);
+    color:var(--dark);
+    border-radius: 10px;
+    border: 1px solid var(--dark);
+    margin: 2%;
 }
 
 /* footer */
+footer{
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color, #08efc7);
+    font-family: 'Share Tech', sans-serif;
+}
+
+foot-par{
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+#back{
+    background-color: var(--white);
+}

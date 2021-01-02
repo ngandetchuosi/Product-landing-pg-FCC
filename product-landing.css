@@ -1,19 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
 :root{
-    --main-color: #06a388;
+    --main-color: #08efc7;
     --white: #f7fffd;
-    --dark: #024439;
+    --dark: #000000;
     --light: #3af8d7;
 }
 
+
 body{
-    background-color: #27312f;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+/*header styling*/
+a, u{
+    text-decoration: none !important;
+}
+
+nav, a{
+    color: var(--white);
+    font-size: 1.1em;
 }
 
 header{
-    position: fixed;
-    padding: 60px;
-    text-align: center;
-    background: black;
-    color: white;
-    font-size: 30px;
+    width: 100%
+    display:table-row;
+    background-color: var(--main-color, #08efc7);
+}
+
+nav{
+    border: 1px solid black;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+/* smaller screen*/
+@media (max-width: 460px){
+    header{
+        flex-wrap: wrap;
+    }
 }
